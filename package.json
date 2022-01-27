@@ -25,6 +25,7 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "@typegoose/typegoose": "^9.5.0",
     "@types/mongoose": "^5.11.97",
     "express": "^4.17.2",
     "mongoose": "^6.1.8",
