@@ -3,12 +3,11 @@ import { MongoConnection } from './dataBase/MongoConnection'
 import { URLController } from './URLController/URLController'
 
 const api = express()
-api.use(express.json())
-
 const database = new MongoConnection()
-database.connect()
-
 const urlController = new URLController()
+
+database.connect()
+api.use(express.json())
 api.post('/shorten', urlController.shorten)
 api.get('/:hash', urlController.redirect)
 

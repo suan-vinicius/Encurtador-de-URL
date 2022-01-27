@@ -11,5 +11,4 @@ export class URL {
     shortURL: string
 }
 
-const doc = getModelForClass(URL)
-export const URLModel = new doc()
+export const URLModel = getModelForClass(URL)
